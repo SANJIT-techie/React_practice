@@ -1,0 +1,2 @@
+Createroot,
+whenever wee create a new react component, we need to start it with a capital letter.
