@@ -6,13 +6,15 @@ import Card from './components/Card'
 
 function App() {
 
-  let newArr = ["new","pappu"]
+  let newArr = ["new","pappu"];
   return (
     <>
-      <h1 className='text-3xl bg-green-500 p-3 rounded-md'>Vite with Tailwind</h1>
-      <Card userName = "sanjit" post='senior engineer'/>
-      <Card userName = "hitesh" post = {newArr}/>
-      <Card userName = ""/>
+      <div className="space-y-4">
+        <h1 className='text-3xl bg-green-500 p-3 rounded-md'>Vite with Tailwind</h1>
+        <Card userName = "sanjit" post='senior engineer'/>
+        <Card userName = {newArr[0]} post = {newArr[1]} />
+        <Card />
+      </div>
     </>
   )
 }
